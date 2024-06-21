@@ -1,0 +1,29 @@
+-- create virtual environment
+python -m venv directory/env (for python 3.10)
+
+-- first command for activate virtual environment
+source env/Scripts/activate
+
+-- run start project server
+python manage.py runserver
+
+
+-- create app = controller:
+python manage.py startapp employees
+
+-- migrate data
+python manage.py migrate
+
+-- create super user
+winpty python manage.py createsuperuser
+
+-- pillow library for create model
+pip install Pillow
+
+-- migrate to folder generate database
+python manage.py makemigrations
+
+-- create database
+python manage.py migrate
+
+https://rathank.com/courses/python-django-basics-develop-2-practical-projects/lesson/course-overview/
