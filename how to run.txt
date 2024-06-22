@@ -11,7 +11,7 @@ python manage.py runserver
 -- create app = controller:
 python manage.py startapp employees
 
--- migrate data
+-- migrate data (user database to server)
 python manage.py migrate
 
 -- create super user
@@ -27,3 +27,10 @@ python manage.py makemigrations
 python manage.py migrate
 
 https://rathank.com/courses/python-django-basics-develop-2-practical-projects/lesson/course-overview/
+
+
+-- static collection command will be run when project is deployed to production environment
+python manage.py collectstatic
+
+-- install postgresql library
+pip install psycopg2
